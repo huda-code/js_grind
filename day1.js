@@ -131,7 +131,7 @@
 //      sum +=  a[i] + b[i] +" "
 // }
 // console.log (sum)
-// ...............................
+// // ...............................
 // 12) Write a program for swapping of two arrays
 // var a = [1,3,5,36,64,7]; //swapping of an element in an array
 // [a[2],a[0]]=[a[0],a[2]];

@@ -29,12 +29,12 @@
 // var a=146
 // var sum = 0
 // d= a.toString().split('')
-// // console.log(d) 
+// console.log(d) 
 // for(i=0;i<d.length;i++){
 //     sum += (+(d[i]))   
 // }
 // console.log(sum);
-// ......................................................
+// // ......................................................
 // 4)fibanocci series with recurtion.
 // var first =0
 // second =1
