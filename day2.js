@@ -109,7 +109,7 @@
 // }
 // console.log(largest);
 // .............................................
-// Print the number of digits given.
+// 9)Print the number of digits given.
 // var ha = 9325;
 // h=" "+ha;
 // // var number=4;
@@ -121,24 +121,29 @@
 //     console.log(`it is not ${h} digit number`)
 // }
 // ..............................
-// Print the number of digit given (if 243 answer should be 3)
+// 10) Print the number of digit given (if 243 answer should be 3)
 // var v=16234;
 // c=v.toString().length
 // console.log(c)
 // .................................
-// convert the given number to string and tell the type of string.
+// 11) convert the given number to string and tell the type of string.
 // var q=234;
 // b=toString(q)
 // console.log(q, typeof(b))
 // ..........................
-a=[2,3,4,3]
 
 // ............................
 
-// Write a program to print 2 table using while loop?
+// 12) Write a program to print 2 table using while loop?
 
 // i=1
 // while (i<=10){
 //     console.log(` 2 x ${i} = ${i*2}`)
 //     i++
 // }
+// .........................................
+// 13) Write the program to find the median of the array.
+// a=[1,2,5,7,8,9];
+// b=a.sort
+// b=(Math.floor(a.length/2))
+// console.log(a[b])
