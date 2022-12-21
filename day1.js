@@ -99,12 +99,29 @@
 // 
 // ......................................
 // 4) Write a program to subtract two integers without using Minus (-) operator x
+// var a = -10 , b = -5
+// console.log(`${a} - (${b}) = ${a+~b+1}`)
+// ............................................
 // 5) Write a program to find remainder of two numbers without using modulus (%) operator x
+// var divident = -100 , divisor = 101
+// var quotient
+// var res = 0
+// if(divident<0)
+//     divident = -divident
+// if(divisor<0)
+//     divisor = -divisor
+// for(var i = 0; res<=divident; i++)
+// {
+//     res = i * divisor
+//     if(res <= divident)
+//         quotient = i
+// }
+// var remainder = divident - (quotient * divisor)
+// console.log(remainder)
+// ...........................................
 // 6) Write a program to generate Prime Numbers less than N and Generate ‘N’ Prime Numbers/in given
 // range. x
 // ..........................................
-
-
 // 7) Write a program that prints the numbers from 1 to 100 and for multiples of '3' print "Fizz" instead of
 // the number and for the multiples of '5' print "Buzz".
 
@@ -123,6 +140,41 @@
  
 // }
 // ....................................
+// 8)Write a program to find GCD.
+// function gcd(a,b){
+//     if(b==0)return a
+//     r = a % b
+//    return gcd(b,r)
+// }
+// console.log(gcd(30,45))
+// ......................................................................
+// 9) write a program find GCD of the array.
+//Using eucledins formula
+// a = b*q + r
+// var a = 102, b = 32;
+//    var r;
+//    while(r!=0)
+//    {     
+//        r = a%b;
+//        a = b;
+//        b = r;
+//    }
+//    console.log(a)
+// ..................................
+// 10)Write a program given an array of N numbers, find LCM
+// var a = 9,b = 15
+// var lcm = lcm(a,b)
+// console.log(lcm)
+
+// function lcm(a,b){
+//     var min = a > b ? b : a
+//     var max = a < b ? b : a
+//     for(var i = 1;i<=max;i++){
+//         if((max * i)%min == 0)
+//             return max * i
+//     }
+// }
+// .....................................
 // 11) Write a program to find the Sum of Array Elements
 // var a=[1,4,6,8]
 // var b=[2,6,9,3]
@@ -157,7 +209,19 @@
 // }
 // console.log(largest);
 // .........................................
-// 15) Write a program to find the minimum number in an array using function
+// 14)) Write the program to find the median of the array.
+// a=[1,2,5,7,8,9];
+// b=a.sort
+// b=(Math.floor(a.length/2))
+// console.log(a[b])
+// // .......................
+// // 15))  Write a program to find the highest and the lowest number in array
+// let a = [3 , 6, 2, 56, 32, 5, 89, 32];
+// let b=a.sort();
+
+// console.log(b[a.length-1] )
+// ..........................................................
+// x) Write a program to find the minimum number in an array using function
 // var a = [3 , 6, 2, 56, 32, 5, 89, 32];
 // var mini= 0;
 // var largest=0;
@@ -171,32 +235,19 @@
 // console.log(mini);
 // console.log(largest);
 // ..............................
-// 16) Write the program to find the median of the array.
-// a=[1,2,5,7,8,9];
-// b=a.sort
-// b=(Math.floor(a.length/2))
-// console.log(a[b])
-// .......................................
-// 17)  Write a program to find the highest and the lowest number in array
-// let a = [3 , 6, 2, 56, 32, 5, 89, 32];
-// let b=a.sort();
-
-// console.log(b[a.length-1] )
-// ......................................
-// 18) Write a program to find Mean of given Array Elements?
+// // 16) Write a program to find Mean of given Array Elements?
 // var a=[1,4,6,8]
 // sum=0
 // for (i=0;i<=a.length-1;i++){
 //      sum +=  a[i] 
 // }
-// // console.log (sum)
+// console.log (sum)
 // mean = sum/a.length
 // console.log(mean)
-// ..............................
-// 19) Write a program to find whether given number is an Armstrong number or not? ** (Narcissistic
+// .......................................
+// 17) Write a program to find whether given number is an Armstrong number or not? ** (Narcissistic
     // number or Pluperfect digital invariant (PPDI) or a Plus perfect number)
-
-    // var arm = 0, a, num;
+//     var arm = 0, a, num;
 //     temp = num;
 //     l = num.toString().length
 //     while (temp > 0) {
@@ -213,7 +264,7 @@
 
 // armstr(1)
 // ......................................
-// 20) Write a program to find whether given number is an Perfect number or not
+// 18) Write a program to find whether given number is an Perfect number or not
 // function perfect(number)
 // {
 // var temp = 0;
@@ -235,8 +286,8 @@
 //         }   
 //  } 
 // perfect(6);
-// ....................................................
-//21)
+// ........................................
+// 19)
 // .Write a  program to test whether a passed letter is a vowel or not? (edited)
 // function vowels(v){
 // if(v == 'a' || v == 'e' || v == 'i' || v == 'o' || v == 'u' || v == 'A' || v == 'E' || d == 'I' || d == 'O' || d == 'U' )
@@ -245,9 +296,8 @@
 //     console.log(v + " is Consonant");
 // return v;
 // }
-// vowels("i")
-// ...........................................................
-// 22.Biggest among three numbers?
+// .............................................
+// 20.Biggest among three numbers?
 // var a=8,b=5,c=1
 
 // if ((a==b) && (b==c) && (c==a))
@@ -278,8 +328,8 @@
 // {
 //     console.log(`${c} is greater`)
 // }
-// .....................................................
-//  23.roots of quadratic equation, nature of roots 
+// ............................................
+// //  21.roots of quadratic equation, nature of roots 
 // var a=6,b=-0,c=1
 // D=b*b-4*a*c
                                   // console.log(D)
@@ -296,8 +346,8 @@
 //  else{
 //       console.log("equal roots")
 //  }
-// ..................................................
-// 24) Write a program to Check Whether the given year is a leap year or not
+// ...........................................
+// 22) Write a program to Check Whether the given year is a leap year or not
 // function leapyear(year){
 //     rem = year%4;
 //     if(rem == 0){
@@ -309,8 +359,8 @@
 // }
 // result =   leapyear(1956)
 // console.log(result);
-// ..............................................
-// 25) Write a program to check whether a number is a positive number or negative number?
+// ....................................
+// 23) Write a program to check whether a number is a positive number or negative number?
 // var a=2;
 // if (a>0){
 //     console.log( `the ${a} is positive`)
@@ -318,4 +368,187 @@
 // else {
 //     console.log( `the ${a} is negative`) 
 // }
+// ...................................................
+// 24,
+// ...................
+// 25)
+// function power(num,pwr){
+//     if(pwr==0)return 1
+//     return num * power(num,pwr-1)
+// }
+// console.log(power(5,4))
+// ...........................................
+// 26) Write a program to check wheather the given character is alphabet or not.
+// var c = 'z'
+// var d = c.charCodeAt(0)
+// if( (d >= 65 && d <= 90) || (d >= 97 && d <= 122) )
+//     console.log("Its An Alphabet")
+// else 
+//     console.log("ITS NOT AN ALPHABET")
+// .................................
+// 27) .check if its a triangle first and then Check whether a triangle is a scalene/isosceles/equilateral triangle?
+// i) if directly lengths are given,
+// ii) Take coordinates as input.
+
+// var a=13,b=24,c=23;
+// if ((a+b>c)&&(b+c>a)&&(c+a>b)){
+//     console.log("It is an triangle");
+// }
+// else{
+//     console.log("It is not a triangle");
+// }
+// if (a!=b!=!c){
+//     console.log("its a scalene triangle")
+// }
+// else if (a==b || b==c||c==a){
+//     console.log("Its an isoscelec triangle")
+// }
+// else if (a==b && b==c && c==a){
+//     console.log("its an equilateral triangle")
+// }
+// ......................................
+// 28) Write a program to find area and circumference of a circle.
+// var r=3;
+// R=3.14*r*r;
+// console.log(`The Area of the Circle is ${R}`)
+// C=3.14*2*r;
+// console.log(`The circumference of the circle is ${C}`)
+// ..............................
+// 30)Write a program to check if the given string is palindrome or not
+// var str = "ABCD"
+// str = str.toLocaleLowerCase()
+// var len = str.length
+// var j = len-1
+// for(var i = 0;i<len/2;i++){
+//     if(str.charAt(i)!=str.charAt(j--))
+//         break
+// }
+// if(i>=len/2)
+//     console.log("string is palindrome")
+// else
+//     console.log("not palindrome")
+// ......................................
+// 43)Write an algorithm using JAVASCRIPT to swap two number using temp variables
+
+//Using temporary variable
+// var a = 21
+// var b = 13
+// console.log("before swap a = "+a + " b = "+b)
+// var temp
+// temp = a
+// a = b
+// b = temp
+// console.log("after swap a = " + a + " b = " + b)
+
+
+// //Using + and -
+// var a = 21
+// var b = 13
+// console.log("before swap a = "+a + " b = "+b)
+// a = b - a // b = (a = b) - (b - a)
+// b = b - a
+// a = b + a  
+// console.log("after swap a = " + a + " b = " + b)
+
+// //Using * and /
+// var a = 18
+// var b = 10
+// console.log("before swap a = "+a + " b = "+b)
+// a = a * b
+// b = a / b
+// a = a / b
+// console.log("after swap a = " + a + " b = " + b)
+
+// //Using ^
+// var a = 17
+// var b = 12
+// console.log("before swap a = "+a + " b = "+b)
+// a = a ^ b
+// b = a ^ b
+// a = a ^ b
+// console.log("after swap a = " + a + " b = " + b)
+
+// //Using * and / in oneline
+
+// var a = 16
+// var b = 12
+// console.log("before swap a = "+a + " b = "+b)
+// a = (a * b) / (b = a)
+// console.log("after swap a = " + a + " b = " + b)
+// ....................................................
+// 44)Write a program to convert Decimal to Binary and binary to decimal
+// var a = ""
+// var num = 12
+// while(num>0){
+//     a += num%2
+//     num= Math.trunc(num/2)
+// }
+// str = a.split('').reverse().join('')
+// console.log(str)
+// ...........................................................
+// 50)Write an algorithm using Javascript to reverse Array method
+// var arr = ['a','b','c','d','e','f','g']
+// var len = arr.length
+// var j = len - 1
+// for(var i = 0;i < len/2;i++){
+//     var temp
+//     temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = temp
+//     j--
+// }
+// console.log(arr)
+// .....................................................
+// 51)Write an algorithm using JAVASCRIPT to check if a given number is in the following series.
+// let num = 4096
+// res = num/4
+// if(num/res == 4)
+//     console.log("Given number is from series")
+// else
+//     console.log("Given number is not from series")
+// ..................................................
+// 54)Write a program to generate N fibonnaci series ,generate fibonacci series upto N. with recursion, with iteration. which approach is more efficient.
+//Recursion
+// var a=0,b=1,c
+// function fibSeries(n){
+//     if(n>0)
+//     {
+//          c = a + b
+//          a = b
+//          b = c
+//          console.log(c)
+//          fibSeries(n-1)
+//     }
+// }
+// console.log(0+"\n"+1)
+// fibSeries(6)
+// //
+// console.log("with Iterations")
+// var a =0,b=1,c
+// console.log(0+"\n"+1)
+// for(var i = 0;i<6;i++){
+//     c = a + b
+//     a = b
+//     b = c
+//     console.log(c)
+// }
+// ..............................................
+// 55)Write a program to calculate factorial of any given number N. with recursion, without recursion.
+// which approach is more efficient?
+//Recursion
+// function fact(n){
+//     if(n==1 || n==0)
+//         return 1
+//     return n * fact(n-1)
+//  }
+// console.log(fact(5))
+// //Iterative
+// function fact(n){
+//     if(n==1 || n==0)
+//         return 1
+//     return n * fact(n-1)
+//  }
+// console.log(fact(5))
+// ....................................
+
 
