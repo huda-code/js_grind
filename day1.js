@@ -535,20 +535,25 @@
 // ..............................................
 // 55)Write a program to calculate factorial of any given number N. with recursion, without recursion.
 // which approach is more efficient?
-//Recursion
-// function fact(n){
-//     if(n==1 || n==0)
-//         return 1
-//     return n * fact(n-1)
-//  }
-// console.log(fact(5))
-// //Iterative
-// function fact(n){
-//     if(n==1 || n==0)
-//         return 1
-//     return n * fact(n-1)
-//  }
-// console.log(fact(5))
+// Recursion
+function fact(n){
+    if(n==1 || n==0)
+        return 1
+    return n * fact(n-1)
+ }
+ console.time();
+console.log(fact(4))
+console.timeEnd();
+//Iterative
+function fact(n){
+    if(n==1 || n==0)
+        return 1
+    return n * fact(n-1)
+ }
+ console.time();
+console.log(fact(5))
+console.timeEnd();
+
 // ....................................
 
 
