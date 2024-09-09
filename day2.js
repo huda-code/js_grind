@@ -147,3 +147,60 @@
 // b=a.sort
 // b=(Math.floor(a.length/2))
 // console.log(a[b])
+
+// 1.) Start by writing a function to find the smallest prime factor of a number.
+// 2.) Then, create a loop that will continue until Apu's score is greater than or equal to Y. 
+//   In each iteration, find the smallest prime factor of the current score and add it 
+//   to the score, also increment a counter to keep track of the time.
+
+// Add smallest prime factor
+// Time Limit: 2, Memory Limit: 128000
+// Apu's current score is X. Each second, Apu will find the smallest prime factor of her score and add it to her score.
+// Determine the minimum time in seconds, after which her score becomes ≥ Y.
+
+// Input
+// The first line of input contains a single integer T, denoting the number of test cases.
+// Each test case consists of a single line containing two integers X and Y, the initial and required score of Apu.
+
+// Constraints
+// 1 ≤ T ≤ 1000
+// 2 ≤ X ≤ 10
+// 20 ≤ Y ≤ 109
+// Output
+// For each test case, output the minimum time in seconds, after which Apu's score becomes ≥ Y.
+// Example
+// Sample Input
+// 2
+// 2 23
+// 9 20
+// Sample Output
+// 11
+// 5
+// Explanation
+// Test case 1: The initial score is 2. Apu needs the score to be at least 23.
+// The smallest prime factor of 2 is 2. Thus, the score increase to 2 + 2 = 4.
+// The smallest prime factor of 4 is 2. Thus, the score increase to 4 + 2 = 6.
+// Similarly, each time the score would be increased by 2. Thus, after 11 seconds, the score becomes 24, which is ≥ 23.
+// Test case 2: The initial score is 9. Apu needs the score to be at least 20.
+// The smallest prime factor of 9 is 3. Thus, the score increase to 9 + 3 = 12.
+// The smallest prime factor of 12 is 2. Thus, the score increase to 12 + 2 = 14.
+// The smallest prime factor of 14 is 2. Thus, the score increase to 14 + 2 = 16.
+// The smallest prime factor of 16 is 2. Thus, the score increase to 16 + 2 = 18.
+// The smallest prime factor of 18 is 2. Thus, the score increase to 18 + 2 = 20.
+// Thus, after 5 seconds, the score becomes 20, which is ≥ 20.
+
+    
+// function smallestPrimeFactor(n){
+//     if (n <= 1){
+//         return null;
+//     }
+//     if (n % 2 === 0){
+//         return 2;
+//     }
+//     for (let i=3; i*i <= n; i +=2){
+//         if (n % i === 0){
+//     return i;
+//       }
+// }
+// return n;
+// }
